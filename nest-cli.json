@@ -1,0 +1,27 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "modules/forge": {
+      "type": "library",
+      "root": "libs/modules/forge",
+      "entryFile": "index",
+      "sourceRoot": "libs/modules/forge/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/modules/forge/tsconfig.lib.json"
+      }
+    },
+    "forge": {
+      "type": "library",
+      "root": "libs/forge",
+      "entryFile": "index",
+      "sourceRoot": "libs/forge/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/forge/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/modules/forge/(.*)": "<rootDir>/../libs/modules/forge/src/$1",
+    "@app/modules/forge": "<rootDir>/../libs/modules/forge/src",
+    "test/forge/(.*)": "<rootDir>/../libs/forge/src/$1",
+    "test/forge": "<rootDir>/../libs/forge/src"
+  }
+}
